@@ -9,18 +9,22 @@ To run the Weather Alert Web App, follow these steps:
 
 1. Prerequisites : 
 - Python 3.x installed on your system.
-- Flask library installed. 
+- Flask library installed.
 - You can install it using pip install Flask. 
+
+
 
 2. Installation 
 - Clone the repository to your local machine:
     
-    $ git clone <repository_url> 
+      $ git clone <repository_url> 
  
  - Navigate to the project directory:
 
-    $ cd weather-alert-web-app Create a virtual environment 
+       $ cd weather-alert-web-app Create a virtual environment 
     
+
+
 3. (optional but recommended):
 
  -- shell:
@@ -29,19 +33,26 @@ To run the Weather Alert Web App, follow these steps:
 
  -- On Windows:
 
-    $ venv\Scripts\activate On macOS and Linux:
+    $ venv\Scripts\activate 
+    
+ --  On macOS and Linux:
 
     $ source venv/bin/activate Install the required dependencies:
 
     $ pip install -r requirements.txt Running the Application 
     
-4. Start the Flask application:
 
-    $ flask run By default, the app will run on http://127.0.0.1:5000/.
+
+4. Start the Flask application:
+   flask run By default,
+   run this command inside your terminal
+
+           $ python app.py
+    the app will run on http://127.0.0.1:5000/.
 
 Open your web browser and navigate to the above URL to access the Weather Alert Web App.
-
 Fill out the form with your location and temperature range preferences, and click the "Submit" button to receive alerts.
+
 ## Special Considerations
 1. The app uses a simple subprocess to demonstrate the concept of monitoring temperature ranges. In a production environment, a more robust mechanism for monitoring and alerting should be implemented. 
 
