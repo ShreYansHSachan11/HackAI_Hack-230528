@@ -8,28 +8,36 @@ The TemperatureAlertAgent Web App is a python-based web application that allows 
 To run the Weather Alert Web App, follow these steps:
 
 1. Prerequisites : 
-Python 3.x installed on your system.
-Flask library installed. 
-You can install it using pip install Flask. 
+- Python 3.x installed on your system.
+- Flask library installed. 
+- You can install it using pip install Flask. 
 
-Installation 
-Clone the repository to your local machine:
+2. Installation 
+- Clone the repository to your local machine:
+    
+    $ git clone <repository_url> 
+ 
+ - Navigate to the project directory:
 
-shell Copy code git clone <repository_url> Navigate to the project directory:
+    $ cd weather-alert-web-app Create a virtual environment 
+    
+3. (optional but recommended):
 
-shell Copy code cd weather-alert-web-app Create a virtual environment (optional but recommended):
+ -- shell:
+ 
+    $ python -m venv venv Activate the virtual environment:
 
-shell Copy code python -m venv venv Activate the virtual environment:
+ -- On Windows:
 
-On Windows:
+    $ venv\Scripts\activate On macOS and Linux:
 
-shell Copy code venv\Scripts\activate On macOS and Linux:
+    $ source venv/bin/activate Install the required dependencies:
 
-shell Copy code source venv/bin/activate Install the required dependencies:
+    $ pip install -r requirements.txt Running the Application 
+    
+4. Start the Flask application:
 
-shell Copy code pip install -r requirements.txt Running the Application Start the Flask application:
-
-shell Copy code flask run By default, the app will run on http://127.0.0.1:5000/.
+    $ flask run By default, the app will run on http://127.0.0.1:5000/.
 
 Open your web browser and navigate to the above URL to access the Weather Alert Web App.
 
@@ -38,3 +46,7 @@ Fill out the form with your location and temperature range preferences, and clic
 1. The app uses a simple subprocess to demonstrate the concept of monitoring temperature ranges. In a production environment, a more robust mechanism for monitoring and alerting should be implemented. 
 
 2. Make sure to replace <repository_url> with the actual URL of your Git repository if you are using version control.
+## Screenshots
+
+![App Screenshot](https://i.ibb.co/CmXLWGL/temp.png)
+
